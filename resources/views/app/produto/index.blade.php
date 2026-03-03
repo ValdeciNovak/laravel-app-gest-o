@@ -9,7 +9,7 @@
         <div class="menu">
             <ul>
                 <li>
-                    <a href=''>Novo</a>
+                    <a href='{{ route('produto.create') }}'>Novo</a>
                     <a href="">Consulta</a>
 
                 </li>
