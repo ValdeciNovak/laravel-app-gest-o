@@ -28,6 +28,7 @@
                             <th>Id</th>
                             <th></th>
                             <th></th>
+                            <th></th>
                         </tr>
                     <tbody>
                         @foreach ($produtos as $produto)
@@ -37,6 +38,9 @@
                                 <td>{{ $produto->peso }}</td>
                                 <td>{{ $produto->unidade_id }}</td>
                                 <td>{{ $produto->id }}</td>
+                                <td>
+                                    <a href="{{ route('produto.show', ['produto' => $produto->id]) }}">Visualizar</a>
+                                </td>
                                 <td>
                                     <a href="">Excluir</a>
                                 </td>
