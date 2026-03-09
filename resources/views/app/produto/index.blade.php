@@ -45,7 +45,7 @@
                                     <a href="">Excluir</a>
                                 </td>
                                 <td>
-                                    <a href="">Editar</a>
+                                    <a href="{{ route('produto.edit', ['produto' => $produto->id]) }}">Editar</a>
                                 </td>
                             </tr>
                         @endforeach
